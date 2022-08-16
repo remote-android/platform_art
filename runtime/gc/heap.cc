@@ -4667,7 +4667,7 @@ void Heap::PostForkChildAction(Thread* self) {
   } else {
     // The syscall should fail only if it doesn't exist in the kernel or if it's
     // denied by SELinux.
-    CHECK(errno == ENOSYS || errno == EACCES) << "userfaultfd: " << strerror(errno);
+    //CHECK(errno == ENOSYS || errno == EACCES) << "userfaultfd: " << strerror(errno);
   }
 #endif
 
